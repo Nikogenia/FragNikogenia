@@ -1,0 +1,27 @@
+---
+
+services:
+  backend:
+    container_name: frag-ng-backend
+    image: nikogenia/frag-ng-backend:latest
+    restart: unless-stopped
+    networks:
+      - frag-ng
+  frontend:
+    container_name: frag-ng-frontend
+    image: nikogenia/frag-ng-frontend:latest
+    volumes:
+      - /path/frontend:/frag-ng
+    restart: unless-stopped
+    networks:
+      - frag-ng
+  redis:
+    container_name: frag-ng-redis
+    image: redis:latest
+    restart: unless-stopped
+    networks:
+      - frag-ng
+
+networks:
+  frag-ng:
+    external: true
