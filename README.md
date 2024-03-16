@@ -1,3 +1,3 @@
 # Frag Nikogenia
-A online latin-german dictionary
+online latin-german dictionary
 
