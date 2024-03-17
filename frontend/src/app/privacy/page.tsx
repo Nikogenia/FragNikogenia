@@ -1,6 +1,8 @@
+import "./style.css"
+
 export default function Privacy() {
   return (
-    <main className="">
+    <main className="p-16">
       <div>
         <h1>Datenschutz&shy;erkl&auml;rung</h1>
         <h2>1. Datenschutz auf einen Blick</h2>
