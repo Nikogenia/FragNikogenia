@@ -1,19 +1,23 @@
-h1 {
+h2 {
     @apply text-3xl font-bold pb-6;
 }
 
-h2 {
+h3 {
     @apply text-2xl font-bold py-4;
 }
 
-h3 {
+h4 {
     @apply text-xl font-semibold py-3;
 }
 
-h4 {
+h5 {
     @apply font-semibold py-2;
 }
 
 p {
     @apply pb-2
+}
+
+ul {
+    @apply list-disc list-outside pl-5 pb-2
 }

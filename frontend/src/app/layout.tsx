@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="de">
       <body className={`${inter.variable} ${roboto_mono.variable}
-      font-sans bg-background text-text p-8`}>
+      font-sans bg-background text-text p-16`}>
         <Header></Header>
         {children}
         <Footer></Footer>
