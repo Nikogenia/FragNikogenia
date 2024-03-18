@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     colors: {
       'text': '#E1EFFF',
-      'background': '#10263D',
+      'text-shaded': '#A7D0FF',
+      'background': '#1b2836',
       'primary': '#3981c8',
       'secondary': '#78b0e8',
       'accent': '#f0aa64',
