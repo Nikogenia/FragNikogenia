@@ -9,6 +9,8 @@ export default function Footer() {
         <span> | </span>
         <a href="https://status.nikogenia.de" className="text-text hover:underline">Status</a>
         <span> | </span>
+        <Link href="/contact" className="text-text hover:underline">Kontakt</Link>
+        <span> | </span>
         <Link href="/privacy" className="text-text hover:underline">Datenschutz</Link>
       </div>
       <div>

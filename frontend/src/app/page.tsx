@@ -10,7 +10,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col items-center p-12">
-      <input placeholder="Suchen" autoFocus ref={search}
+      <input placeholder="Suchen" autoFocus ref={search} type="text"
       className="bg-text placeholder-secondary text-primary w-96 py-2 px-4
       font-mono font-semibold rounded-md border-secondary border-2 mb-16"></input>
       {
