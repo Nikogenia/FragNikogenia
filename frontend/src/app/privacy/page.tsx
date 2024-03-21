@@ -1,10 +1,10 @@
 import Link from "next/link";
-import "./privacy.module.css";
+import styles from "./privacy.module.css";
 
 export default function Privacy() {
   return (
     <main className="pt-16">
-      <div>
+      <div className={styles.privacy}>
         <h2>Datenschutz&shy;erkl&auml;rung</h2>
         <h3>1. Datenschutz auf einen Blick</h3>
         <h4>Allgemeine Hinweise</h4> <p>Die folgenden Hinweise geben einen einfachen &Uuml;berblick dar&uuml;ber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie pers&ouml;nlich identifiziert werden k&ouml;nnen. Ausf&uuml;hrliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgef&uuml;hrten Datenschutzerkl&auml;rung.</p>

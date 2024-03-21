@@ -1,6 +1,6 @@
 {
-  "name": "frontend",
-  "version": "0.1.0",
+  "name": "fng-frontend",
+  "version": "1.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbo",
@@ -14,7 +14,8 @@
     "react-dom": "^18",
     "react-icons": "^5.0.1",
     "react-spinners": "^0.13.8",
-    "react-toastify": "^10.0.5"
+    "react-toastify": "^10.0.5",
+    "sharp": "^0.33.2"
   },
   "devDependencies": {
     "@types/node": "^20",

@@ -23,7 +23,7 @@ export default function Home() {
 function Idle() {
   return (
     <div className="flex flex-col items-center">
-      <img src="/logo-256.png" alt="logo" width={200} height={200}></img>
+      <Image src="/logo-256.png" alt="logo" width={200} height={200}></Image>
       <div className="text-2xl font-semibold bg-gradient-to-br bg-clip-text text-transparent
       from-text to-text-shaded mt-8">
         Online Latein-Deutsch Wörterbuch
