@@ -1,3 +1,5 @@
-backend/venv
+**/venv
 **/__pycache__
-.vscode
+**/.vscode
+**/.idea
+test
