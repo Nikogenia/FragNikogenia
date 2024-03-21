@@ -5,37 +5,37 @@ frontend built with NextJS
 
 ##### Next JS
 
-Install dependencies
+Install dependencies \
 `npm install`
 
-Start development server
+Start development server \
 `npm run dev`
 
 ##### Docker
 
-Build development image
+Build development image \
 `docker build -t nikogenia/fng-frontend:dev .`
 
-Run development image
+Run development image \
 `docker run --name fng-frontend -p 3000:3000 --rm nikogenia/fng-frontend:dev`
 
-Remove dangling images
+Remove dangling images \
 `docker image prune`
 
 ### Deployment
 
-Create builder
+Create builder \
 `docker buildx create --name builder1`
 
-Use builder
+Use builder \
 `docker buildx use builder1`
 
-Start builder
+Start builder \
 `docker buildx inspect --bootstrap`
 
-Build production image
+Build production image \
 `docker buildx build --platform linux/amd64,linux/arm64,linux/arm/v7 -t nikogenia/fng-frontend:latest -t nikogenia/fng-frontend:version --push .`
 
-Run production image
+Run production image \
 `docker run --name fng-frontend nikogenia/fng-frontend`
 

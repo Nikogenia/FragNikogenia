@@ -11,5 +11,5 @@ online latin-german dictionary
 - [frontend](./frontend/README.md)
 - [redis](./redis/README.md)
 
-[Nikogenia](https://www.nikogenia.de)
+[Nikogenia](https://www.nikogenia.de) \
 Copyright © 2024
