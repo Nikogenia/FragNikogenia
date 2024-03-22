@@ -1,25 +1,60 @@
 ---
 
+# --------------
+# Frag Nikogenia
+# --------------
+
+# Checkout .env for configuration
+
+name: fng
+
+
 services:
+
   backend:
     container_name: fng-backend
     image: nikogenia/fng-backend:latest
     restart: unless-stopped
+    volumes:
+      - ./backend:/fng
+    environment:
+      - REDIS_OM_URL=redis://default:${REDIS_PASSWORD}@${SUBNET}.4:6379/0
     networks:
-      - fng
+      fng:
+        ipv4_address: ${SUBNET}.2
+
   frontend:
     container_name: fng-frontend
     image: nikogenia/fng-frontend:latest
     restart: unless-stopped
+    environment:
+      - FRONTEND_URL=${FRONTEND_URL}
+      - BACKEND_URL=${BACKEND_URL}
     networks:
-      - fng
+      fng:
+        ipv4_address: ${SUBNET}.3
+
   redis:
     container_name: fng-redis
-    image: redis:latest
+    image: redis/redis-stack-server:latest
     restart: unless-stopped
+    volumes:
+      - ./redis:/data
+    environment:
+      - REDIS_ARGS=--save 60 1 --requirepass ${REDIS_PASSWORD}
     networks:
-      - fng
+      fng:
+        ipv4_address: ${SUBNET}.4
+
 
 networks:
+
   fng:
-    external: true
+    driver: bridge
+    driver_opts:
+      com.docker.network.bridge.name: fng
+    ipam:
+      driver: default
+      config:
+        - subnet: ${SUBNET}.0/24
+        - gateway: ${SUBNET}.1

@@ -24,6 +24,8 @@ Remove dangling images \
 
 ### Deployment
 
+##### Build
+
 Create builder \
 `docker buildx create --name builder1`
 
@@ -36,6 +38,13 @@ Start builder \
 Build production image \
 `docker buildx build --platform linux/amd64,linux/arm64,linux/arm/v7 -t nikogenia/fng-frontend:latest -t nikogenia/fng-frontend:version --push .`
 
+##### Stack
+
+It is **highly recommended** to launch the **full stack** with the
+**docker compose file** at the root of this project! See the full
+documentation in the main README ...
+
+##### Manual
+
 Run production image \
 `docker run --name fng-frontend nikogenia/fng-frontend`
-
