@@ -1,10 +1,12 @@
 ---
 
+
 # --------------
 # Frag Nikogenia
 # --------------
 
 # Checkout .env for configuration
+
 
 name: fng
 
@@ -28,8 +30,10 @@ services:
     image: nikogenia/fng-frontend:latest
     restart: unless-stopped
     environment:
-      - FRONTEND_URL=${FRONTEND_URL}
-      - BACKEND_URL=${BACKEND_URL}
+      - NEXT_PUBLIC_FRONTEND_URL=${FRONTEND_URL}
+      - NEXT_PUBLIC_BACKEND_URL=${BACKEND_URL}
+      - NEXT_PUBLIC_GITHUB_URL=${GITHUB_URL}
+      - NEXT_PUBLIC_STATUS_URL=${STATUS_URL}
     networks:
       fng:
         ipv4_address: ${SUBNET}.3

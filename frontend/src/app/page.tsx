@@ -1,5 +1,6 @@
 "use client"
 
+import { BACKEND_URL } from "@/next.constants.mjs";
 import Image from "next/image";
 import { useRef, useState } from "react";
 
@@ -30,7 +31,7 @@ export default function Home() {
 
       const q = event.target.value
       const params = new URLSearchParams({ "query": q })
-      const response = await fetch(process.env.NEXT_PUBLIC_BACKEND_URL + "/search?" + params)
+      const response = await fetch(BACKEND_URL + "/search?" + params)
 
       const data = await response.json()
       setEntries(data.words)
@@ -54,9 +55,9 @@ export default function Home() {
 function Idle() {
   return (
     <div className="flex flex-col items-center">
-      <Image src="/logo-256.png" alt="logo" width={200} height={200}></Image>
+      <Image src="/logo.svg" alt="logo" width={200} height={200}></Image>
       <div className="text-2xl font-semibold bg-gradient-to-br bg-clip-text text-transparent
-      from-text to-text-shaded mt-8">
+      from-text to-primary mt-8">
         Online Latein-Deutsch Wörterbuch
       </div>
     </div>

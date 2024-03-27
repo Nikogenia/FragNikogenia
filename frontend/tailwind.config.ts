@@ -8,15 +8,10 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      'text': '#E1EFFF',
-      'text-shaded': '#A7D0FF',
-      'background': '#1b2836',
-      'primary': '#3981c8',
-      'secondary': '#78b0e8',
-      'accent': '#f0aa64',
-      'white': '#ffffff',
-      'black': '#000000',
-      'gray': '#999999',
+      'text': '#ffffff',
+      'text-gray': '#bbbbbb',
+      'background': '#000000',
+      'primary': '#ffc453',
       'transparent': 'transparent'
     },
     fontFamily: {
@@ -28,4 +23,5 @@ const config: Config = {
   },
   plugins: [],
 };
+
 export default config;

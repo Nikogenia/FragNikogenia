@@ -1,4 +1,4 @@
-![Logo](/logo/FragNikogenia%20Logo%20Dark.png "Logo")
+![Logo](/logo/Frag%20Nikogenia%20Logo.png "Logo")
 
 # Frag Nikogenia
 online latin-german dictionary
@@ -17,5 +17,5 @@ Instructions in progress ...
 - [frontend](./frontend/README.md)
 - [redis](./redis/README.md)
 
-Made by [Nikogenia](https://www.nikogenia.de) \
-_Copyright © 2024_
+Frag Nikogenia v1.0 \
+_© 2024 [Nikogenia](https://www.nikogenia.de)_

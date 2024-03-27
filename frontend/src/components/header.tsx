@@ -4,11 +4,11 @@ import { FaMagnifyingGlass, FaList } from "react-icons/fa6";
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-start">
+    <header className="flex justify-between">
       <Link href="/" className="flex items-center space-x-5">
-        <Image src="/logo-128.png" alt="logo" width={60} height={60}></Image>
+        <Image src="/logo.svg" alt="logo" width={60} height={60}></Image>
         <h1 className="text-4xl font-bold bg-gradient-to-br bg-clip-text text-transparent
-      from-text to-text-shaded">
+      from-primary to-text">
           Frag Nikogenia
         </h1>
       </Link>

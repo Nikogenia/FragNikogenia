@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="w-full p-8 space-y-1 text-center text-gray">
+    <footer className="w-full p-8 space-y-1 text-center text-text-gray">
       <div>
         <Link href="/about" className="text-text hover:underline">Über</Link>
         <span> | </span>
